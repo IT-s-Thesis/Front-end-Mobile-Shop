@@ -10,6 +10,13 @@ a, a:hover {
 body {
     background: #f0f0f0;
 }
+.red {
+    color:red;
+    font-weight: 600;
+}
+.green {
+    color: #1bbb61;
+}
 /* CSS Header */
 header {
     background-color: #1bbb61;
@@ -91,12 +98,10 @@ nav  {
     transform: translateY(-25px);
 }
 .select-banner {
-    position: absolute;
     display: flex;
     flex-direction: row;
     margin: 0;
     height: 60px;
-    bottom: -59px;
     background: #fff;
 }
 .select-banner .active {
@@ -126,9 +131,23 @@ nav  {
     font-size: 13px;
     font-weight: 500;
 }
-.red {
-    color:red;
-    font-weight: 600;
+
+
+/* CSS Product List */
+.product-box {
+    background: #fff;
+}
+.box-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+}
+.product-item img{
+    width: 100%;
+}
+.hot-item-title {
+    display: block;
+    padding: 6px 0;
 }
 
 
@@ -146,9 +165,8 @@ nav  {
     padding-top: 10px;
     font-size: 1rem;
 }
-.bottom-banner {
-    margin-top: 36px !important;
 }
+
 @media (max-width: 991px) {
 .tech-item img {
     display: none;
@@ -162,10 +180,24 @@ nav  {
     float: none !important;
     margin-left: 120px;
 }
-.bottom-banner {
-    margin-top: 60px !important;
+}
+
+@media (max-width: 767px) {
+.tech-item img {
+    display: block;
+}   
+.select-banner {
+    position: unset;
+}
+.tech-title span {
+    display: inline-block;
+}
+.tech-title a {
+    display: inline-block;
+    margin-left: 180px;
 }
 }
+
 @media (max-width: 576px) {
 .right-header {
     display: block;
@@ -191,4 +223,17 @@ nav button span {
     box-sizing: border-box;
     width: 45%;
 }
+.left-banner, .right-banner {
+    padding: 0 20px !important;
+    width: 100%;
+}
+.left-banner img {
+    width: 100%;
+}
+.select-banner div {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 }
