@@ -208,9 +208,23 @@ nav  {
     text-decoration: line-through;
 }
 
+/* CSS Accessories */
+
+.accessories-list {
+    display: flex;
+}
+.accessories-item .product-item {
+    width: 228px;
+}
+.accessories-item img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 16px auto;
+}
 
 
-@media (max-width: 1200px) { 
+@media only screen and (max-width: 1200px) and (min-width: 992px) { 
 .nav-item {
     padding: 10px 0;
 }
@@ -226,7 +240,7 @@ nav  {
 }
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
 .tech-item img {
     display: none;
 }
@@ -239,9 +253,35 @@ nav  {
     float: none !important;
     margin-left: 120px;
 }
+.big-product img {
+    height: 160px;
+    width: 100px;
+}
+.big-info {
+    width: 65%;
+}
+.big-special i {
+    font-size: 14px;
+}
+.logo {
+    width: 100px;
+}
+.left-header {
+    height: 67px;
+}
+.right-header {
+    padding: 0;
+}
+.nav-item {
+    padding: 0;
+    text-align: center;
+}
+.hotline p, .cart p {
+    padding: 0;
+}
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) and (min-width: 577px) {
 .tech-item img {
     display: block;
 }   
@@ -255,9 +295,16 @@ nav  {
     display: inline-block;
     margin-left: 180px;
 }
+.nav-item {
+    padding: 4px;
+    text-align: center;
+}
+.hotline p, .cart p {
+    padding: 6px 6px 0px 6px;
+}
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 .right-header {
     display: block;
     padding: 0;
