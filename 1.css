@@ -264,7 +264,7 @@ footer {
 
 
 /* CSS Details Page */
-.details-page {
+.white-background {
     background: #fff;
 }
 .breadcrumb {
@@ -344,6 +344,96 @@ footer {
 }
 
 
+.specifications-item, .accessory-item{
+    display: flex;
+    padding: 10px 6px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.specifications-item span:first-child{
+    width: 40%;
+}
+.specifications-item span:last-child{
+    width: 60%;
+}
+.accessory-item img {
+    width: 30%;
+    height: 90px;
+    margin-right: 20px;
+}
+
+
+/* CSS Category */
+.category-list {
+    display: flex;
+    justify-content: space-between;
+}
+.category-list a{
+    width: 15%;
+}
+.category-list img {
+    width: 100%;
+}
+.choose-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 10px;
+}
+.choose-price .price-list {
+    width: 70%;
+}
+.price-list a{
+    color: #1bbb61;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.product-category-list .product-img {
+    height: 220px;
+}
+.product-category-list .product-info {
+    padding-left: 14px !important;
+}
+.product-moreInfo {
+    padding-left: 14px;
+    border-top: 1px dashed #ccc;
+}
+.product-moreInfo p {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+
+
+/* CSS Shopping Cart */
+
+.btn-black {
+    background: transparent;
+    text-transform: capitalize;
+    width: 35px;
+    font-size: 22px;
+    padding: 0px 8px;
+    margin: 42px 0 0 !important;
+    color: black;
+    border-radius: 0;
+    border: 1.2px solid black;
+  }
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.cart-item .form-group {
+    width: 50%;
+    margin: 8px 0;
+}
+.cart-item img{
+    width: 20%;
+    padding: 6px;
+    height: 110px;
+}
 
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) { 
