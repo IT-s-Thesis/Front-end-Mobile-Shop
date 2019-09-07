@@ -409,6 +409,12 @@ footer {
 
 /* CSS Shopping Cart */
 
+.shopping-cart {
+    padding: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.15);
+}
+
 .btn-black {
     background: transparent;
     text-transform: capitalize;
@@ -420,7 +426,7 @@ footer {
     border-radius: 0;
     border: 1.2px solid black;
   }
-.cart-item {
+.cart-item, .total-price {
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
@@ -433,6 +439,22 @@ footer {
     width: 20%;
     padding: 6px;
     height: 110px;
+}
+.total-price .sale {
+    margin-left: 12px;
+}
+.cart-item .product-info, .total-price .label {
+    width: 40%;
+}
+.customer-info .customer-name, .customer-info .customer-phone {
+    width: 49%;
+    display: inline-block;
+}
+.shopping-cart .btn-buy, .shopping-cart .btn-installment {
+    width: 285px;
+}
+.shopping-cart .btn-buy p, .shopping-cart .btn-installment p {
+    font-size: 17px;
 }
 
 
@@ -458,6 +480,12 @@ footer {
 }
 .btn-installment {
     width: 53%;
+}
+.shopping-cart .product-buy {
+    text-align: center;
+}
+.shopping-cart .btn-buy {
+    margin-bottom: 10px;
 }
 }
 
@@ -522,6 +550,13 @@ footer {
 .details-info span {
     display: block;
 }
+.shopping-cart .btn-buy, .shopping-cart .btn-installment {
+    width: 320px;
+}
+.shopping-cart .btn-installment {
+    margin-top: -9px;
+    margin-left: 14px;
+}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 577px) {
@@ -544,6 +579,12 @@ footer {
 }
 .hotline p, .cart p {
     padding: 6px 6px 0px 6px;
+}
+.shopping-cart .product-buy {
+    text-align: center;
+}
+.shopping-cart .product-buy .btn-buy {
+    margin-bottom: 10px;
 }
 }
 
@@ -584,5 +625,22 @@ nav button span {
     font-size: 14px;
     font-weight: 500;
 }
-
+.cart-page {
+    overflow-x: hidden;
+}
+.mobile-fix {
+    padding: 10px 30px !important;
+}
+.mt-4 h5 {
+    font-size: 16px;
+}
+.mt-4 .float-right {
+    font-size: 15px;
+}
+.shopping-cart .product-buy {
+    text-align: center;
+}
+.shopping-cart .product-buy .btn-buy {
+    margin-bottom: 10px;
+}
 }
